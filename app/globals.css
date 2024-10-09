@@ -2,26 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: ROSEMUZ font;
+  src: url(/font/Gilroy-Medium.woff) format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: ROSEMUZ font;
+  src: url(/font/Gilroy-Semibold.woff) format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: ROSEMUZ font;
+  src: url(/font/Gilroy-Bold.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: ROSEMUZ font;
+  src: url(/font/Gilroy-Extrabold.woff) format("woff");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap
+}
+
+:root,
+body,
+div,
+html {
+  font-family: ROSEMUZ font, sans-serif !important
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+  border-radius: 100%;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+._next {
+  height: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.z-f {
+  position: fixed;
+  z-index: 5500;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  bottom: env(safe-area-inset-bottom, 0px);
+  right: env(safe-area-inset-right, 0px);
+  left: env(safe-area-inset-left, 0px);
+}
+
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
 }
