@@ -73,7 +73,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .z-f {
   position: fixed;
   z-index: 5500;
-
   display: flex;
   flex-direction: column;
   margin: 0px auto;
