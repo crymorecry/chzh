@@ -7,11 +7,14 @@ export async function GET() {
     const follower_nuum = await followerNuum()
     const follower_tg = await followerTG()
 
-    return NextResponse.json({
+    const response =  NextResponse.json({
         tiktok: follower_tiktok,
         nuum: follower_nuum,
         telegram: follower_tg
     })
+    response.headers.set('Cache-Control', 's-maxage=60, stale-while-revalidate=30');
+
+    return response;
 }
 
 async function followerNuum() {
@@ -50,3 +53,4 @@ async function followerTikTok() {
         return 4000
     }
 }
+
