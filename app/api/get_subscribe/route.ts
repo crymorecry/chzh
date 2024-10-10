@@ -15,8 +15,13 @@ export async function GET() {
 }
 
 async function followerNuum() {
+    const headers = {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+    }
     try {
-        const response = await fetch('https://nuum.ru/api/v2/broadcasts/public?with_extra=true&channel_name=4zh&with_deleted=true')
+        const response = await fetch('https://nuum.ru/api/v2/broadcasts/public?with_extra=true&channel_name=4zh&with_deleted=true', {headers})
         const data = await response.json()
         return data.result.channel.followers_count
     } catch {
@@ -25,8 +30,13 @@ async function followerNuum() {
 }
 
 async function followerTG() {
+    const headers = {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+    }
     try {
-        const response = await axios.get('https://t.me/+KzLfDZh9lMY0MWFi')
+        const response = await axios.get('https://t.me/+KzLfDZh9lMY0MWFi', {headers})
         const $ = cheerio.load(response.data);
         const text = $('div.tgme_page_extra').text();
         const numbers = text.match(/\d+/g);
@@ -39,6 +49,9 @@ async function followerTG() {
 async function followerTikTok() {
     try {
         const headers = {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0',
             'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15"
         }
         const username = "che_obzor"
@@ -50,3 +63,5 @@ async function followerTikTok() {
         return 4000
     }
 }
+
+
