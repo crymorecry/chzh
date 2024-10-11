@@ -1,6 +1,7 @@
 import Audit from "@/components/audit/page";
 import Case from "@/components/case/page";
 import Connection from "@/components/connection/page";
+import Interested from "@/components/interested/page";
 import Platforms from "@/components/platforms/page";
 import Reviews from "@/components/reviews/page";
 import Tiktok from "@/components/tiktok/page";
@@ -26,12 +27,12 @@ export default function Home() {
             <Platforms />
           </div>
           <div className="lg:flex hidden w-full justify-center relative items-start">
-            <div className="flex relative justify-center">
+            <div className="flex relative justify-center max-w-2xl w-full">
               <Image src="/ЧЗХ.svg" width={2000} height={2000} className="max-w-7xl w-full items-center" alt="/" />
-              <Image src="/ЧЗХ.svg" width={2000} height={2000} className="blur-2xl w-full animate-pulse max-w-4xl items-center absolute" alt="/" />
+              <Image src="/ЧЗХ.svg" width={2000} height={2000} className="blur-2xl w-full animate-pulse max-w-7xl items-center absolute" alt="/" />
             </div>
-            <div className="absolute flex justify-center items-center w-full">
-              <Image src="/man.svg" width={2000} height={2000} className="w-full h-full max-w-2xl items-center" alt="/" />
+            <div className="absolute flex justify-center items-center w-full z-0">
+              <Image src="/man.svg" width={2000} height={2000} className="w-full h-full max-w-2xl items-center z-0" alt="/" />
             </div>
           </div>
         </div>
@@ -41,6 +42,7 @@ export default function Home() {
         <Tiktok />
         <Audit />
         <Reviews />
+        <Interested />
         <Connection />
       </div>
     </main >

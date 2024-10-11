@@ -9,7 +9,10 @@ export default function Platforms() {
     const fecth_data = async () => {
         setLoading(false)
         const responce = await fetch('/api/get_subscribe', {
-            method: "GET"
+            method: "GET",
+            next: {
+                revalidate: 3
+            }
         })
         const data = await responce.json()
         setFollower(data)
