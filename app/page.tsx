@@ -31,18 +31,18 @@ export default function Home() {
               <Image src="/ЧЗХ.svg" width={2000} height={2000} className="max-w-7xl w-full items-center" alt="/" />
               <Image src="/ЧЗХ.svg" width={2000} height={2000} className="blur-2xl w-full animate-pulse max-w-7xl items-center absolute" alt="/" />
             </div>
-            <div className="absolute flex justify-center items-center w-full z-0">
-              <Image src="/man.svg" width={2000} height={2000} className="w-full h-full max-w-2xl items-center z-0" alt="/" />
+            <div className="absolute flex justify-end items-center w-full z-0">
+              <Image src="/man.svg" width={2000} height={2000} className="w-full h-full max-w-lg items-center z-0" alt="/" />
             </div>
           </div>
         </div>
       </div>
       <div className="flex flex-col">
+        <Interested />
         <Case />
         <Tiktok />
         <Audit />
         <Reviews />
-        <Interested />
         <Connection />
       </div>
     </main >

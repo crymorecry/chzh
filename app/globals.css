@@ -38,7 +38,8 @@
 body,
 div,
 html {
-  font-family: ROSEMUZ font, sans-serif !important
+  font-family: ROSEMUZ font, sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
