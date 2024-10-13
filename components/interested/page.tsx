@@ -39,7 +39,7 @@ export default function Interested() {
                                 ) : (
                                     <span className="text-zinc-900 font-extrabold text-4xl lg:text-5xl">{price}</span>
                                 )}
-                                <a className="rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+                                <a href="https://t.me/Mike_4ZH" className="rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
                                     <div className="hover:bg-gray-700 transition bg-gray-800 rounded-full px-8 py-2 text-xs lg:text-base text-slate-50 font-medium"><a href="https://t.me/Mike_4ZH">Связаться со мной</a></div>
                                 </a>
                             </div>
