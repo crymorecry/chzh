@@ -33,7 +33,7 @@ async function followerTG() {
         const numbers = text.match(/\d+/g);
         return numbers
     } catch {
-        return 4000
+        return 6000
     }
 }
 
@@ -48,7 +48,7 @@ async function followerTikTok() {
         const membersCount = response.data.data[0].usersCount;
         return membersCount
     } catch {
-        return 4000
+        return 53000
     }
 }
 
