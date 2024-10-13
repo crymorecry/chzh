@@ -1,7 +1,3 @@
-'use client'
-
-import { useEffect, useState } from "react"
-
 export default function Interested() {
     return (
         <div className="h-full py-8 lg:py-20 w-full">
