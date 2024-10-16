@@ -23,11 +23,11 @@ export default function Platforms() {
         fecth_data()
     }, [])
     return (
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl">
+        <div className="grid grid-cols-3 gap-2 lg:gap-8 w-full max-w-7xl">
             <a href="https://t.me/+KzLfDZh9lMY0MWFi" className="flex flex-col gap-y-8 justify-between text-center items-center rounded-md px-6 py-4 w-full hover:bg-slate-100 transition">
-                <div className="flex relative h-28">
+                <div className="flex relative h-28 w-full">
                     <div className="absolute items-end flex justify-end h-full w-full mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="none" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" className="w-8" fill="none" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1">
                             <path className="stroke-zinc-900" d="M17.07,20.61H9.79a2,2,0,0,1-2-2,2,2,0,0,1,2-2h1.87L5,9.86a2,2,0,0,1-.19-2.65,1.88,1.88,0,0,1,1.47-.68,1.84,1.84,0,0,1,1.35.55l4.06,4.06,4.08-3.06a1.91,1.91,0,0,1,2.5.18h0A17.18,17.18,0,0,1,22.42,15l.06.19" />
                             <path className="stroke-zinc-900" d="M10.63,10.12A4.73,4.73,0,0,0,11,8.17,4.78,4.78,0,1,0,6.26,13a4.67,4.67,0,0,0,1.55-.26" />
                         </svg>
@@ -47,12 +47,12 @@ export default function Platforms() {
             <a href="https://www.tiktok.com/@che_obzor?_t=8od7PnrlerQ&_r=1" className="flex flex-col gap-y-8 justify-between text-center items-center rounded-md px-6 py-4 w-full hover:bg-slate-100 transition">
                 <div className="flex relative h-28">
                     <div className="absolute items-end flex justify-end h-full w-full mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="none" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" className="w-8" fill="none" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1">
                             <path className="stroke-zinc-900" d="M17.07,20.61H9.79a2,2,0,0,1-2-2,2,2,0,0,1,2-2h1.87L5,9.86a2,2,0,0,1-.19-2.65,1.88,1.88,0,0,1,1.47-.68,1.84,1.84,0,0,1,1.35.55l4.06,4.06,4.08-3.06a1.91,1.91,0,0,1,2.5.18h0A17.18,17.18,0,0,1,22.42,15l.06.19" />
                             <path className="stroke-zinc-900" d="M10.63,10.12A4.73,4.73,0,0,0,11,8.17,4.78,4.78,0,1,0,6.26,13a4.67,4.67,0,0,0,1.55-.26" />
                         </svg>
                     </div>
-                    <Image src="/platforms/tiktok.svg" width={120} height={120} className="w-full h-full items-center" alt="/" />
+                    <Image src="/platforms/tiktok.svg" width={120} height={120} className="w-64 h-full items-center" alt="/" />
                 </div>
                 <div className="flex flex-col gap-y-1 items-center">
                     {loading ? (
@@ -67,7 +67,7 @@ export default function Platforms() {
             <a href="https://nuum.ru/channel/4zh" className="flex flex-col gap-y-8 justify-between text-center items-center rounded-md px-6 py-4 w-full hover:bg-slate-100 transition">
                 <div className="flex relative h-28">
                     <div className="absolute items-end flex justify-end h-full w-full mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="none" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" className="w-8" fill="none" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1">
                             <path className="stroke-zinc-900" d="M17.07,20.61H9.79a2,2,0,0,1-2-2,2,2,0,0,1,2-2h1.87L5,9.86a2,2,0,0,1-.19-2.65,1.88,1.88,0,0,1,1.47-.68,1.84,1.84,0,0,1,1.35.55l4.06,4.06,4.08-3.06a1.91,1.91,0,0,1,2.5.18h0A17.18,17.18,0,0,1,22.42,15l.06.19" />
                             <path className="stroke-zinc-900" d="M10.63,10.12A4.73,4.73,0,0,0,11,8.17,4.78,4.78,0,1,0,6.26,13a4.67,4.67,0,0,0,1.55-.26" />
                         </svg>

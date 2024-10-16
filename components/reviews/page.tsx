@@ -7,22 +7,22 @@ export default function Reviews() {
                 <div className="flex lg:flex-row flex-col gap-x-4 items-center">
                     <span className="text-blue-800 font-bold text-2xl lg:text-5xl max-w-7xl">ОТЗЫВЫ КЛИЕНТОВ</span>
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-8">
-                    <div className="flex flex-col gap-y-4 w-full justify-center items-center rounded-md">
+                <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-2 gap-x-2 gap-y-4 lg:gap-8">
+                    <div className="flex flex-col gap-y-4 w-full justify-start items-center rounded-md">
                         <Image src="/reviews/1.jpg" width={2000} height={2000} className="rounded-xl w-full max-w-sm" alt="/" />
-                        <span className="text-zinc-700 font-semibold text-xl text-center">на 300% увеличился рост продаж в период даты публиĸации + 5 дня после. карточĸа поднялась в поисĸе по основным ĸлючивеĸам</span>
+                        <span className="text-zinc-700 font-semibold text-base lg:text-xl text-center">на 300% увеличился рост продаж в период даты публиĸации + 5 дня после. карточĸа поднялась в поисĸе по основным ĸлючивеĸам</span>
                     </div>
-                    <div className="flex flex-col gap-y-4 w-full justify-center items-center rounded-md">
+                    <div className="flex flex-col gap-y-4 w-full justify-start items-center rounded-md">
                         <Image src="/reviews/2.jpg" width={2000} height={2000} className="rounded-xl w-full max-w-sm" alt="/" />
-                        <span className="text-zinc-700 font-semibold text-xl text-center">получил колоссальный рост и благодаря полученной статистики, отзывы и аналитику расширил ассортиментную матрицу товара на 60%</span>
+                        <span className="text-zinc-700 font-semibold text-base lg:text-xl text-center">получил колоссальный рост и благодаря полученной статистики, отзывы и аналитику расширил ассортиментную матрицу товара на 60%</span>
                     </div>
-                    <div className="flex flex-col gap-y-4 w-full justify-center items-center rounded-md">
+                    <div className="flex flex-col gap-y-4 w-full justify-start items-center rounded-md">
                         <Image src="/reviews/3.jpg" width={2000} height={2000} className="rounded-xl h-full w-full max-w-sm" alt="/" />
-                        <span className="text-zinc-700 font-semibold text-xl text-center">х2 продаж к уровню продаж прошлого месяца товар вышел в топ 50 своей категории ,  благодаря трафику  после запуска рекламной компании  </span>
+                        <span className="text-zinc-700 font-semibold text-base lg:text-xl text-center">х2 продаж к уровню продаж прошлого месяца товар вышел в топ 50 своей категории ,  благодаря трафику  после запуска рекламной компании  </span>
                     </div>
-                    <div className="flex flex-col gap-y-4 w-full justify-center items-center rounded-md">
+                    <div className="flex flex-col gap-y-4 w-full justify-start items-center rounded-md">
                         <Image src="/reviews/4.jpg" width={2000} height={2000} className="rounded-xl h-full w-full max-w-sm" alt="/" />
-                        <span className="text-zinc-700 font-semibold text-xl text-center">х3 продаж к уровню продаж прошлого месяца товар вышел в топ 50 своей категории, благодарятрафику после запуска рекламной компании</span>
+                        <span className="text-zinc-700 font-semibold text-base lg:text-xl text-center">х3 продаж к уровню продаж прошлого месяца товар вышел в топ 50 своей категории, благодарятрафику после запуска рекламной компании</span>
                     </div>
                 </div>
             </div>

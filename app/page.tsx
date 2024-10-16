@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-y-12 w-full justify-between items-center">
+    <main className="flex flex-col  w-full justify-between items-center">
       <div className="flex flex-col gap-y-12 lg:min-h-screen lg:h-screen h-full py-8 lg:py-20 w-11/12 lg:w-11/12 2xl:w-10/12 mx-auto">
         <div className="lg:hidden flex relative justify-center">
           <Image src="/ЧЗХ.svg" width={2000} height={2000} className="max-w-7xl w-full items-center" alt="/" />
