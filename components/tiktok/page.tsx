@@ -9,7 +9,7 @@ export default function Tiktok() {
                     <Image src="/platforms/tiktok.svg" width={2000} height={2000} className="w-80 " alt="/" />
 
                 </div>
-                <div className="flex lg:flex-row flex-col justify-between w-full gap-4">
+                <div className="lg:flex lg:flex-row grid grid-cols-2 justify-between w-full gap-4">
                     <Image src="/tiktok/1.svg" width={2000} height={2000} className="rounded-xl h-full w-full max-w-sm" alt="/" />
                     <Image src="/tiktok/2.svg" width={2000} height={2000} className="rounded-xl h-full w-full max-w-sm" alt="/" />
                     <Image src="/tiktok/3.svg" width={2000} height={2000} className="rounded-xl h-full w-full max-w-sm" alt="/" />

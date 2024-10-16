@@ -7,7 +7,7 @@ export default function Reviews() {
                 <div className="flex lg:flex-row flex-col gap-x-4 items-center">
                     <span className="text-blue-800 font-bold text-2xl lg:text-5xl max-w-7xl">ОТЗЫВЫ КЛИЕНТОВ</span>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-4 w-full gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-8">
                     <div className="flex flex-col gap-y-4 w-full justify-center items-center rounded-md">
                         <Image src="/reviews/1.jpg" width={2000} height={2000} className="rounded-xl w-full max-w-sm" alt="/" />
                         <span className="text-zinc-700 font-semibold text-xl text-center">на 300% увеличился рост продаж в период даты публиĸации + 5 дня после. карточĸа поднялась в поисĸе по основным ĸлючивеĸам</span>
