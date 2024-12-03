@@ -9,7 +9,7 @@ export default function Platforms() {
     const fecth_data = async () => {
         setLoading(false)
         const responce = await fetch('/api/get_subscribe', {
-            method: "GET",
+            method: "POST",
             next: {
                 revalidate: 3
             }
