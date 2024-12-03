@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function POST() {
     try {
-        const response = await axios.post('https://kola344-vpnbot-31c6.twc1.net');
+        const response = await axios.post('https://kola344-vpnbot-31c6.twc1.net/followers');
         const { tiktok, nuum, telegram } = response.data;
 
         return NextResponse.json({
