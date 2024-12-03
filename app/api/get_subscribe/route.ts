@@ -14,7 +14,7 @@ export async function POST() {
     } catch (error) {
         return NextResponse.json({
             error: "Failed to fetch data from FastAPI",
-            details: error.message
+            details: "err"
         }, { status: 500 });
     }
 }
